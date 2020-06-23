@@ -7,10 +7,6 @@
     msg: "Setting up {{ env }} environment"
 
 # https://askubuntu.com/a/211531/501568
-- name: Install HTTPS package for Aptitude
-  become: true
-  apt:
-    name: apt-transport-https
 
 - name: Add Node key
   become: yes
